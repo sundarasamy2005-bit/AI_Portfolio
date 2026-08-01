@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sundarasamy-portfolio.web.app/sitemap.xml

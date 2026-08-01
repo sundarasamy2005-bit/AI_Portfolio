@@ -1,0 +1,25 @@
+/* Global Responsive Breakpoints */
+
+@media (max-width: 1024px) {
+  section {
+    padding: 4rem 4%;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 3rem 4%;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 2.5rem 3.5%;
+  }
+  .section-title {
+    font-size: 1.6rem;
+  }
+}

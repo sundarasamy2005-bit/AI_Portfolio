@@ -1,0 +1,36 @@
+/* Education — Dark Blue Theme */
+.edu-simple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.edu-block {
+  background: var(--bg-secondary);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  width: min(260px, 80vw);
+  text-align: center;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-card);
+  transition: var(--transition);
+}
+.edu-block:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-4px);
+}
+.edu-block h2 { color: var(--text-primary); }
+.edu-block p { color: var(--text-secondary); }
+.wire-glow {
+  width: 80px;
+  height: 4px;
+  background: var(--gradient-progress);
+  animation: wireMove 0.8s infinite alternate;
+  border-radius: 4px;
+}
+@keyframes wireMove {
+  0% { transform: translateX(-5px); width: 70px; }
+  100% { transform: translateX(5px); width: 90px; }
+}

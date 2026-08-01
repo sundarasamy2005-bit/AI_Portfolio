@@ -1,0 +1,24 @@
+## Strict MERN Scaffolding & Migration Guardrails
+
+When converting a static site (HTML/CSS/JS) into a MERN stack application, you MUST strictly adhere to the following setup and architectural guardrails from step one.
+
+### Core Migration Philosophy
+> **Keep the frontend output identical. Only replace the backend logic and project architecture.**
+The new MERN application must produce the exact same output (UI, animations, colors, sections, design, and functionality) as the original static portfolio. Users should notice no visual difference, while gaining the benefits of a scalable architecture.
+
+### 1. Backend Environment Setup (`server/`)
+- **Package Initialization**: Always run `npm init -y` and install core dependencies (`express`, `mongoose`, `cors`, `dotenv`).
+- **Dev Scripts**: You MUST include `nodemon` as a dev dependency and define the following scripts in `package.json`:
+  - `"start": "node server.js"`
+  - `"dev": "nodemon server.js"`
+- **Environment Variables**: Always create a `.env` template file containing expected keys (e.g., `PORT=5000`, `MONGODB_URI=`, `JWT_SECRET=`).
+
+### 2. Strict MVC Architecture
+Never lump logic into single files. You must use strict MVC separation immediately:
+- **Routes**: `server/routes/` must only contain endpoint definitions (e.g., `router.get('/', getProjects)`).
+- **Controllers**: All business logic and database queries must reside in `server/controllers/`.
+- **Services**: Frontend API calls (`axios.get`, etc.) must be extracted out of React components and placed in `client/src/services/`.
+
+### 3. Frontend Modularity (`client/`)
+- **CSS**: Never rely on a single monolithic `index.css`. Extract styling into modular, component-specific files (e.g., `components/Navbar/Navbar.css`) and import them directly into their `.jsx` files to preserve the exact original styling.
+- **State & Utils**: Utilize `context/` for global state (like Auth) and `utils/` for helper functions.

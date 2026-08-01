@@ -1,0 +1,46 @@
+/* ============================================
+   DESIGN SYSTEM — Dark Blue Portfolio Theme
+   ============================================ */
+:root {
+  /* Backgrounds */
+  --bg-primary: #0F172A;
+  --bg-secondary: #1E293B;
+  --bg-tertiary: #334155;
+  --bg-footer: #020617;
+
+  /* Brand Colors */
+  --primary: #3B82F6;
+  --primary-hover: #2563EB;
+  --accent: #38BDF8;
+
+  /* Text */
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+
+  /* Status */
+  --success: #22C55E;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+
+  /* Borders & Effects */
+  --border: rgba(59,130,246,0.2);
+  --border-hover: #38BDF8;
+  --radius: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 40px;
+  --transition: all 0.3s ease;
+
+  /* Shadows */
+  --shadow-card: 0 8px 24px rgba(0,0,0,0.25);
+  --shadow-card-hover: 0 12px 30px rgba(56,189,248,0.25);
+  --shadow-btn: 0 0 8px rgba(59,130,246,0.4);
+  --shadow-btn-hover: 0 0 25px rgba(59,130,246,0.6);
+
+  /* Gradients */
+  --gradient-hero: linear-gradient(135deg, #0F172A 0%, #1E3A8A 50%, #3B82F6 100%);
+  --gradient-text: linear-gradient(120deg, #3B82F6, #38BDF8);
+  --gradient-progress: linear-gradient(90deg, #3B82F6, #38BDF8);
+
+  /* Navbar */
+  --nav-bg: rgba(15,23,42,0.9);
+}
